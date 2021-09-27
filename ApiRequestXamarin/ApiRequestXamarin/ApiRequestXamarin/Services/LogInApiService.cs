@@ -13,7 +13,7 @@ namespace ApiRequestXamarin.Services
         private static HttpClient _client = new HttpClient();
         public LogInApiService()
         {
-            _client.BaseAddress = new Uri("your api address");
+            _client.BaseAddress = new Uri("WebAPIAddress");
         }
         public async Task<LogInApiResponse> Authenticate(Credentials userCredentials)
         {
